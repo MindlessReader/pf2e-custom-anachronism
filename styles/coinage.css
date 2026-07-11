@@ -1,0 +1,23 @@
+/*
+ * Override the hardcoded coin icons in the inventory currency bar.
+ * The pf2e system renders each denomination as a `.currency-image` div whose icon is a
+ * CSS background-image (systems/pf2e styles), so it can't be changed via item data.
+ * Selector includes `.coinage` to outrank the system rule (.currency .denomination.X .currency-image).
+ * Paths are root-absolute (CSS url() is relative to the file).
+ */
+
+.coinage .currency .denomination.pp .currency-image {
+    background-image: url("/icons/sundries/documents/document-bound-white-tan.webp");
+}
+
+.coinage .currency .denomination.gp .currency-image {
+    background-image: url("/icons/sundries/documents/document-bound-white-tan.webp");
+}
+
+.coinage .currency .denomination.sp .currency-image {
+    background-image: url("/icons/commodities/currency/coin-engraved-oval-steel.webp");
+}
+
+.coinage .currency .denomination.cp .currency-image {
+    background-image: url("/icons/commodities/currency/coin-engraved-square-gold.webp");
+}
